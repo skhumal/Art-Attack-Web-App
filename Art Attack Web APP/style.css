@@ -335,3 +335,37 @@ span{
     bottom: 2%;
   }
 }
+
+.shop-section{
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+
+.shop-btn{
+  display:flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.shop-btn a {
+  width: 100px;
+  display: flex;
+  flex-direction: row;
+  padding: 12px 25px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+  background: #00afaa;
+  border-radius: 50px;
+  border: 2px solid  #00afaa;
+  box-shadow: 0 4px 15px rgba(255, 0, 102, 0);
+  transition: box-shadow  0.3s ease, transform 0.3s ease;
+}
+
+.shop-btn a:hover{
+  border-bottom: 2px solid #f97316;
+  color:#fff;
+}
