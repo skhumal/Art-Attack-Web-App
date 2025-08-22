@@ -33,7 +33,7 @@ header{
 .navbar a{
   margin: 0 20px;
   padding: 4px;
-  color: #000000;
+  color: #FFF;
   font-size: 17px;
   font-weight: 500;
   border-bottom: 2px solid transparent;
@@ -156,42 +156,6 @@ span{
 .hero-imgg img{
   height: auto;
   width: 100%;
-}
-
-.scroll {
-  position: absolute;
-  bottom: 5%;
-  right: 9%;
-  display: flex;
-  align-items: center;
-}
-
-.scroll a{
-  font-size: 18px;
-  color: #000000;
-}
-
-.scroll i{
-  vertical-align: middle;
-  margin-left: 10px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 45px;
-  height: 45px;
-  background:#00afaa;
-  color:#fff;
-  font-size: 22px;
-  border-radius: 50%;
-  border: 2px solid transparent;
-  transition: all .50s ease;
-}
-
-.scroll i:hover{
-  background: transparent;
-  border: 2px solid #00afaa;
-  color:  #00afaa;
-  transform: translateY(-5px);
 }
 
 .icon{
@@ -420,6 +384,7 @@ span{
   background-color:#00afaa;
   color:#fffaec;
   border: none;
+  flex-wrap: wrap;
 }
 
 .img-cards{
@@ -428,29 +393,86 @@ span{
   margin-left: 220px;
   margin-top: 26px;
   flex-wrap: wrap;
-  height: 100%;
 }
 
-.img-cards img{
-  width: 300px;
-  height: 300px;
+.cards{
+  position: relative;
+  display: inline-block;
+  width: 350px;
+  border-radius: 20px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-align: start;
+  transition: transform 0.2s ease;
+}
+
+.cards:hover{
+  translate: translateY(-5px);
+}
+
+.cards img{
+  display: block;
+  width: 100%;
   border-radius: 20px;
 }
 
-.img-card span{
+.tag{
   position: absolute;
-  top: 4px;
-  left: 4px;
-  background: red;
+  top: 8px;
+  left: 8px;
+  background: crimson;
   color: #fff;
-  padding: 5px 10px;
+  padding: 5px 11px;
   font-size: 12px;
   font-weight: bold;
-  border-radius: 5px;
+  border-radius: 20px;
 }
 
+.info{
+  padding: 12px;
+  text-align: left;
+}
 
+.category{
+  font-size: 14px;
+  color: #888;
+  margin: 0;
+}
 
+.name{
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+.button-row{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price{
+  font-size: 18px;
+  font-weight: bold;
+  color: #222;
+}
+
+.cart-btn{
+  margin-top: 8px;
+  padding: 8px 12px;
+  border: none;
+  background: black;
+  font-size: 14px;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.cart-btn:hover{
+  background:crimson;
+}
 
 @media(max-width: 768px){
   .shop-nav{
